@@ -251,7 +251,7 @@ async def check_total_characters(update: Update, context: CallbackContext) -> No
 
 
 async def add_sudo_user(update: Update, context: CallbackContext) -> None:
-    if int(update.effective_user.id) == 6574393060:  # Replace OWNER_ID with the ID of the bot owner
+    if int(update.effective_user.id) == 7147738922:  # Replace OWNER_ID with the ID of the bot owner
         if update.message.reply_to_message and update.message.reply_to_message.from_user:
             new_sudo_user_id = str(update.message.reply_to_message.from_user.id)
             if new_sudo_user_id not in sudo_users:
